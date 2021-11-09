@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import "variables";
+body{
+    header{
+        background-color: $Morado;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+
+        .header__logoSlogan{
+            width: 70vw;
+            display: flex;
+            display: inline-block;
+        }
+    }
+}
