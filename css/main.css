@@ -4,7 +4,7 @@
 }
 
 body header {
-  background-color: red;
+  background-color: #9a1ca5;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,5 +12,45 @@ body header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+body header .header__logoSlogan {
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .header__logoSlogan h1 {
+  width: 500px;
+  font-size: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body header .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: block;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-right: 10px;
+}
+
+body header .header__nav .header__opciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body header .header__nav .header__opciones a {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
