@@ -8,25 +8,42 @@
     <title>Jau | Inicio</title>
 </head>
 <body>
+  
   <header class="header">
-    <div class="header__logoSlogan">
-        <a href="index.html"><img src="./Multimedia/Logo.png" alt="Logo" width="200px"></a>
-        <h1>Soluciones como en casa</h1>
-    </div>
-    <div class="header__nav">
-        <ul class="header__opciones">
-            <li>
-                <a href="contacto.html">Contacto</a>
+    <nav class=" header__nav navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="header__logo navbar-brand" href="index.html"><img class="header__logoImagen" src="./Multimedia/Logo.png" alt="Logo" width="150rem"></a>
+        <h1 class="header__slogan">Soluciones cotidianas</h1>
+        <button class="header__hamburguesa navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
+        <div class="header__opciones collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="header__lista navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="header__link nav-link" aria-current="page" href="index.html">Inicio</a>
             </li>
-            <li>
-                <a href="categorias.html">Categorías</a>
+            <li class="nav-item">
+              <a class="header__link nav-link" href="contacto.html">Contactános</a>
             </li>
-        </ul>
-        <form action="" class="header__barra">
-            <input type="search" name="busqueda" placeholder="Buscá tu solución aquí" required>
-            <input type="submit" value="Buscar">
-        </form>
-    </div>
+            <li class="nav-item dropdown">
+              <a class="header__link nav-link dropdown-toggle" href="categorias.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categorías
+              </a>
+              <ul class="header__listaOculta dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="header__listaOculta__item dropdown-item" href="#">Cocina</a></li>
+                <li><a class="header__listaOculta__item dropdown-item" href="#">Matenimiento</a></li>
+                <li><a class="header__listaOculta__item dropdown-item" href="#">Organización</a></li>
+                <li><a class="header__listaOculta__item dropdown-item" href="#">Tintorería</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="header__busqueda d-flex">
+            <input class="form-control me-2" type="search" placeholder="Encontrá tu solución" aria-label="Search" required>
+            <button class="header__boton btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main>
@@ -197,9 +214,10 @@
       </ul>
     </div>
 
-    <div>
+    <!-- <div>
       <a href="index.html"><img src="./Multimedia/logoFooter.png" alt="Logo chico"></a>
     </div>
+  -->
 
     <div>
       <p>Seguinos en:</p>
