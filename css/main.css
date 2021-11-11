@@ -6,7 +6,7 @@
 body header .header__nav {
   background-color: #9a1ca5 !important;
   padding-top: 0%;
-  padding-bottom: 0%;
+  padding-bottom: 5px;
 }
 
 body header .header__nav .header__slogan {
@@ -103,5 +103,24 @@ body header .header__nav .header__hamburguesa {
     padding-left: 10px !important;
     font-size: 25px;
   }
+}
+
+body main .main__que {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+body main .main__que .main__queTitulo {
+  padding-bottom: 20px;
+  color: #9a1ca5;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,16 @@
+body{
+    main{
+        .main__que{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            .main__queTitulo{
+                padding-bottom: 20px;
+                color: $Morado;
+            }
+
+        }
+    }
+}
