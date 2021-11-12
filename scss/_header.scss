@@ -4,9 +4,7 @@
 }
 
 @import "variables";
-body{
     header{
-
         .header__nav{
             background-color: $Morado !important;
             padding-top: 0%;
@@ -60,6 +58,12 @@ body{
                 border-color: white;
             }
         }
+        .header__imagen{
+            margin-top: 0%;
+            width: 100%;
+            position: fixed;
+            z-index: -99;
+        }
     }
     @media (max-width: 480px) and (min-width: 320px){
         .header__logo{
@@ -104,4 +108,3 @@ body{
             font-size: 25px;
         }
     }
-}

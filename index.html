@@ -10,7 +10,7 @@
 <body>
   
   <header class="header">
-    <nav class=" header__nav navbar navbar-expand-lg navbar-light bg-light">
+    <nav class=" header__nav navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="header__logo navbar-brand" href="index.html"><img class="header__logoImagen" src="./Multimedia/Logo.png" alt="Logo" width="150rem"></a>
         <h1 class="header__slogan">Soluciones cotidianas</h1>
@@ -44,20 +44,24 @@
         </div>
       </div>
     </nav>
+    <img class="header__imagen" src="./Multimedia/imagenHeader.png" alt="Curva de header">
   </header>
 
   <main class="container-fluid main">
     <div class="row">
       <div class="main__que col-md-6">
-          <h2 class="main__queTitulo">
+        <img class="main__queLogo" src="./Multimedia/Logo.png" alt="Logo" width="300px">
+          <div class="main__queTexto">
+            <h2 class="main__queTitulo">
               ¿Qué es JaU?
-          </h2>
-          <p>
+            </h2>
+            <p>
               JaU es una plataforma orientada a solucionar problemas cotidianos, de la forma más sencilla...  como en casa. Sabemos que las primeras experiencias viviendo solo, pueden estar repletas de   dudas, y queremos acompañarte en este proceso, ayudándote como lo haría tu familia.
-          </p>
+            </p>
+          </div>
       </div>
 
-      <div id="carouselExampleCaptions" class="col-md-6 carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleCaptions" class="col-md-6 carousel slide main__carousel" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -67,26 +71,26 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="./Multimedia/abuelacocinando.png" class="d-block w-100" alt="abuela cocinando">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Cocina</h5>
+              <div class="main__carouselLetrasbox carousel-caption d-none d-md-block">
+                <h5 class="main__carouselLetrasbox__titulo">Cocina</h5>
               </div>
             </div>
             <div class="carousel-item">
               <img src="./Multimedia/chicocambiandofoco.png" class="d-block w-100" alt="chico cambiando foco">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Mantenimiento</h5>
+              <div class="main__carouselLetrasbox carousel-caption d-none d-md-block">
+                <h5 class="main__carouselLetrasbox__titulo">Mantenimiento</h5>
               </div>
             </div>
             <div class="carousel-item">
               <img src="./Multimedia/padreehijoplanchando.png" class="d-block w-100" alt="padre e hijo planchano">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Tintorería</h5>
+              <div class=" main__carouselLetrasbox carousel-caption d-none d-md-block">
+                <h5 class="main__carouselLetrasbox__titulo">Tintorería</h5>
               </div>
             </div>
             <div class="carousel-item">
               <img src="./Multimedia/madreehijaconpc.png" class="d-block w-100" alt="madre e hija en pc">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Organización</h5>
+              <div class="main__carouselLetrasbox carousel-caption d-none d-md-block">
+                <h5 class="main__carouselLetrasbox__titulo">Organización</h5>
               </div>
             </div>
           </div>
@@ -103,25 +107,25 @@
 
     <div class="row">
       <section class="opinion col-md-12">
-        <h3>
+        <h3 class="opinion__titulo">
             ¿Qué opinan de nosotros?
         </h3>
         <div id="carouselExampleControls" class="opinion_carousel carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active opinion__carouselItem ">
               <div>
-                  <img src="./Multimedia/usuario.png" alt="usuario" width="50px">
+                  <i class="fas fa-user-circle opinion__icono fa-3x"></i>
                   <h4>
                       Mercedes Passano
                   </h4>
+                  <p>
+                      "Por alzar a mis perros durante una clase, manché mi remera preferida! Por suerte encontré la solución aquí! Diez puntos para este sitio!"
+                  </p>
               </div>
-              <p>
-                  "Por alzar a mis perros mientras daba una clase, manché mi remera preferida y no tenía idea como quitar la mancha! Por suerte encontré la solución aquí y quedó impecable otra vez! Diez puntos para este sitio!"
-              </p>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item opinion__carouselItem">
               <div>
-                  <img src="./Multimedia/usuario.png" alt="usuario" width="50px">
+                  <i class="fas fa-user-circle opinion__icono fa-3x"></i>
                   <h4>
                       Usuario 2
                   </h4>
@@ -130,9 +134,9 @@
                   "Me mudé solo hace unos meses, y soy un desastre para pagar cuentas y organizarme. Esta página me ayuda mucho!"
               </p>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item opinion__carouselItem">
               <div>
-                  <img src="./Multimedia/usuario.png" alt="usuario" width="50px">
+                  <i class="fas fa-user-circle opinion__icono fa-3x"></i>
                   <h4>
                       Usuario 3
                   </h4>
@@ -156,7 +160,7 @@
 
     <section class="postulado">
       <div class="row">
-        <h4 class="posptulado__titulo">¿Querés formar parte de JaU?</h4>
+        <h4 class="postulado__titulo">¿Querés formar parte de JaU?</h4>
         <div class="paso1 col-md-4">
           <img src="./Multimedia/1.png" alt="uno" width="80px">
           <h4>Requisitos</h4>
@@ -200,43 +204,41 @@
             Ahora sólo falta esperar, y un representante de JaU se comunicará con vos! 
           </p>
         </div>
-        <button class="botonPostulado"><a href="postulado.html">Postularme!</a></button>
       </div>
+      <a href="postulado.html"><button type="button" class="btn btn-outline-primary postulado__boton"> Postularme!</button></a>
     </section>
-      
   </main>
 
-  <footer>
-    <div>
-      <ul>
+  <footer class="footer">
+    <div class="footer__opciones">
+      <ul class="footer__opcionesLista">
         <li>
-          <a href="contacto.html">Contactános</a>
+          <a class="footer__opcionesLink" href="contacto.html">Contactános</a>
         </li>
         <li>
-          <a href="postulado.html">Formá parte de JaU</a>
+          <a class="footer__opcionesLink" href="postulado.html">Formá parte de JaU</a>
         </li>
         <li>
-          <a href="index.html">Volver al Inicio</a>
+          <a class="footer__opcionesLink" href="index.html">Volver al Inicio</a>
         </li>
       </ul>
     </div>
 
-    <!-- <div>
-      <a href="index.html"><img src="./Multimedia/logoFooter.png" alt="Logo chico"></a>
-    </div>
-  -->
-
     <div>
-      <p>Seguinos en:</p>
-      <ul>
-        <li>
-          <a href="https://www.instagram.com/JauLatam" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="index.html"><img src="./Multimedia/logoFooter.png" alt="Logo chico" width="20%"></a>
+    </div>
+
+    <div class="footer__redes">
+      <p class="footer__redesSeguinos">Seguinos en:</p>
+      <ul class="footer__redesLista">
+        <li class="footer__redesLista__item">
+          <a href="https://www.instagram.com/JauLatam" target="_blank"><i class="fab fa-instagram fa-2x footer__redesIcono"></i></a>
         </li>
-        <li>
-          <a href="https://www.facebook.com/JauLatam" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <li class="footer__redesLista__item">
+          <a href="https://www.facebook.com/JauLatam" target="_blank"><i class="fab fa-facebook-square fa-2x footer__redesIcono"></i></a>
         </li>
-        <li>
-          <a href="https://www.twitter.com/JauLatam" target="_blank"><i class="fab fa-twitter"></i></a>
+        <li class="footer__redesLista__item">
+          <a href="https://www.twitter.com/JauLatam" target="_blank"><i class="fab fa-twitter fa-2x footer__redesIcono"></i></a>
         </li>
       </ul>
     </div>

@@ -1,16 +1,89 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+}
     main{
+        margin-top: 50px;
+        padding: 0% !important;
+        
         .main__que{
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
+            padding:0%;
+            
+
+            .main__queLogo{
+                display: flex;
+                align-self: center;
+                padding-top: 5%;
+            }
 
             .main__queTitulo{
-                padding-bottom: 20px;
                 color: $Morado;
+                background-color: white;
+            }
+            .main__queTexto{
+                background-color: white;
+                height: 100%;
             }
 
         }
+
+        .main__carousel{
+            padding: 0% !important;
+            .main__carouselLetrasbox{
+                background-color: rgba(255, 255, 255, 0.432);
+                
+                border-radius: 10px;
+                box-shadow: 0px 0px 15px 1px $Morado;
+
+                .main__carouselLetrasbox__titulo{
+                color: $Morado;
+                font-size: 2em;
+                }
+            }
+        }
+
+        .opinion{
+            background-color: $Morado;
+            color: white;
+            padding: 10px;
+
+            .opinion__titulo{
+                display: flex;
+                justify-content: center;
+            }
+
+            .opinion__icono{
+                color: $Naranja;
+            }
+
+            .opinion__carouselItem{
+                padding: 20px !important;
+            }
+        }
+
+        .postulado{
+            background-color: $Naranja;
+            width: 100%;
+            padding: 20px;
+
+            text-align: center;
+
+            .postulado__titulo{
+                color: white;
+            }
+
+            .postulado__boton{
+                border-color: white;
+                color: white;
+                &:hover{
+                    background-color: $Morado;
+                }
+            }
+        }
+            
+    
     }
-}
