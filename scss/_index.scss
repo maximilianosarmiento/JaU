@@ -21,7 +21,11 @@
 
             .main__queLogo{
                 align-self: center;
-                padding-top: 5%;
+                padding-top: 10%;
+                animation-name: efectoLogo;
+                animation-iteration-count: infinite;
+                animation-duration: 2s;
+                animation-delay: 0s;
             }
 
             .main__queTitulo{
@@ -160,8 +164,6 @@
                     text-align: center;
                 }
 
-
-    
                 .postulado__paso1{
                     @include card;
                     grid-area: postulado__paso1;
@@ -174,14 +176,8 @@
                     grid-area: postulado__paso3;
                     @include card;
                 }
-
-
-
             }
         }
-
-        
-        
     }
 
 

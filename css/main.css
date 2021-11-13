@@ -1,4 +1,63 @@
 @charset "UTF-8";
+@-webkit-keyframes efectoLogo {
+  0% {
+    opacity: 50%;
+  }
+  10% {
+    opacity: 60%;
+  }
+  25% {
+    opacity: 75%;
+  }
+  40% {
+    opacity: 85%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 85%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  90% {
+    opacity: 60%;
+  }
+  100% {
+    opacity: 50%;
+  }
+}
+@keyframes efectoLogo {
+  0% {
+    opacity: 50%;
+  }
+  10% {
+    opacity: 60%;
+  }
+  25% {
+    opacity: 75%;
+  }
+  40% {
+    opacity: 85%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 85%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  90% {
+    opacity: 60%;
+  }
+  100% {
+    opacity: 50%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -149,7 +208,15 @@ main .main__que .main__queLogo {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding-top: 5%;
+  padding-top: 10%;
+  -webkit-animation-name: efectoLogo;
+          animation-name: efectoLogo;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 main .main__que .main__queTitulo {
