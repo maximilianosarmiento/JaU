@@ -8,7 +8,7 @@
     <title>Jau | Inicio</title>
 </head>
 <body>
-  
+  <!--header con navbar-->
   <header class="header">
     <nav class=" header__nav navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -48,6 +48,8 @@
   </header>
 
   <main class="container-fluid main">
+
+    <!--Sección de presentación-->
     <div class="row main__row">
       <div class="main__que col-md-6">
         <img class="main__queLogo" src="./Multimedia/Logo.png" alt="Logo" width="300px">
@@ -55,7 +57,7 @@
             <h2 class="main__queTitulo">
               ¿Qué es JaU?
             </h2>
-            <p>
+            <p class="main__queTexto__parrafo">
               JaU es una plataforma orientada a solucionar problemas cotidianos, de la forma más sencilla...  como en casa. Sabemos que las primeras experiencias viviendo solo, pueden estar repletas de   dudas, y queremos acompañarte en este proceso, ayudándote como lo haría tu familia.
             </p>
           </div>
@@ -105,6 +107,7 @@
       </div>
     </div>
 
+    <!--Sección opiniones-->
     <div class="row">
       <section class="opinion col-md-12">
         <h3 class="opinion__titulo">
@@ -158,55 +161,36 @@
       </section>
     </div>
 
-    <section class="postulado">
-      <div class="row">
-        <h4 class="postulado__titulo">¿Querés formar parte de JaU?</h4>
-        <div class="paso1 col-md-4">
-          <img src="./Multimedia/1.png" alt="uno" width="80px">
-          <h4>Requisitos</h4>
-          <ul>
-            <li>
-              Ser mayor de 18 años
-            </li>
-            <li>
-              Saber mucho sobre una categoría en particular (A comprobar)
-            </li>
-            <li>
-              Contar con la disponibilidad horaria para cumplir con el tiempo de respuesta
-            </li>
-          </ul>
-        </div>
+    <!--Sección postulado-->
+    <div class="postulado">
+      <h4 class="postulado__titulo">¿Querés formar parte de JaU?</h4>
+  
+      <article class="postulado__paso1">
+        <img src="./Multimedia/1.png" alt="1">
+        <ul class="postulado__pasoUl">
+          <li>Ser mayor de 18 Años</li>
+          <li>Saber mucho sobre una categoría (A comprobar)</li>
+          <li>Contar con disponibilidad horaria para responder en el tiempo establecido</li>
+        </ul>
+      </article>
 
-        <div class="paso2 col-md-4">
-          <img src="./Multimedia/2.png" alt="dos" width="80px">
-          <h4>
-            ¿Cómo postularme?
-          </h4>
-          <ol type="1">
-            <li>
-              Clickeá en el botón de abajo
-            </li>
-            <li>
-              Seguí los pasos
-            </li>
-            <li>
-              Enviá tus datos
-            </li>
-          </ol>
-        </div>
+      <article class="postulado__paso2">
+        <img src="./Multimedia/2.png" alt="2">
+        <ol class="postulado__pasoOl">
+          <li>Clickeá en el botón de abajo</li>
+          <li>Completá los formularios</li>
+          <li>Enviános tus datos</li>
+        </ol>
+      </article>
 
-        <div class="paso3 col-md-4">
-          <img src="./Multimedia/3.png" alt="tres" width="80px">
-          <h4>
-            Ya cási sos parte de nuestro equipo! 
-          </h4>
-          <p>
-            Ahora sólo falta esperar, y un representante de JaU se comunicará con vos! 
-          </p>
-        </div>
-      </div>
-      <a href="postulado.html"><button type="button" class="btn btn-outline-primary postulado__boton"> Postularme!</button></a>
-    </section>
+      <article class="postulado__paso3">
+        <img src="./Multimedia/3.png" alt="3">
+        <p>
+          ¡Estás a un paso de formar parte de nuestro equipo. Ahora sólo queda esperar y un representante de JaU se comunicará con vos!
+        </p>
+      </article>
+      <button type="button" class="postulado__boton btn btn-outline-primary"><a href="postulado.html">Postularme!</a></button>
+    </div>
   </main>
 
   <footer class="footer">

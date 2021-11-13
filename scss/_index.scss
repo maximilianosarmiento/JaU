@@ -5,10 +5,13 @@
     main{
         margin-top: 50px;
         padding: 0% !important;
+
+        /*----Sección de presentación----*/
         .row{
             width: 100%;
+        }
         
-        .main__que{
+            .main__que{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -28,6 +31,10 @@
             .main__queTexto{
                 background-color: white;
                 height: 100%;
+                
+                .main__queTexto__parrafo{
+                    padding: 20px;
+                }
             }
 
         }
@@ -48,46 +55,135 @@
                 }
             }
         }
-    }
+
+        /*----Sección de opinión----*/
         .row{
             width: 100%;
             margin-left: 0% !important;
-        .opinion{
-            background-color: $Morado;
-            color: white;
-            padding: 10px;
-
-            .opinion__titulo{
-                display: flex;
-                justify-content: center;
-            }
-
-            .opinion__icono{
-                color: $Naranja;
-            }
-
-            .opinion__carouselItem{
-                padding: 20px !important;
-            }
-        }
-    }
-
-        .postulado{
-            background-color: $Naranja;
-            width: 100%;
-            text-align: center;
-
-            .postulado__titulo{
+            .opinion{
+                background-color: $Morado;
                 color: white;
-            }
+                padding: 10px;
 
-            .postulado__boton{
-                border-color: white;
-                color: white;
-                &:hover{
-                    background-color: $Morado;
+                .opinion__titulo{
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .opinion__icono{
+                    color: $Naranja;
+                }
+
+                .opinion__carouselItem{
+                    padding: 20px !important;
                 }
             }
         }
+
+        /*----Sección de postulado----*/
+        .postulado{
+            display: grid;
+            grid-template-areas: 
+                "postulado__titulo postulado__titulo postulado__titulo"
+                "postulado__paso1 postulado__paso2 postulado__paso3"
+                "postulado__boton postulado__boton postulado__boton";
+            grid-template-rows: 1fr auto auto;
+            grid-template-columns: repeat(3, 30%);
+            column-gap: 10px;
+            row-gap: 5px;
+            justify-content: center;
+
+            .postulado__titulo{
+                grid-area: postulado__titulo;
+                color: $Naranja;
+                justify-self: center;
+                padding: 5px;
+                font-size: 2rem;
+            }
+
+            .postulado__paso1{
+                @include card;
+                grid-area: postulado__paso1;
+            }
+            .postulado__paso2{
+                grid-area: postulado__paso2;
+                @include card;
+            }
+            .postulado__paso3{
+                grid-area: postulado__paso3;
+                @include card;
+            }
+            .postulado__boton{
+                border-color: $Morado !important;
+                grid-area: postulado__boton;
+                width: fit-content !important;
+                justify-self: center;
     
+                a{
+                    text-decoration: none !important;
+                    color: $Morado !important;
+                }
+                &:hover{
+                    background-color: $Naranja;
+                    color: white !important;
+                    border-color: white !important;
+                    a{
+                        color: white !important;
+                    }
+    
+                }
+            }
+        }
+
+
+        @media (max-width: 720px) and (min-width: 320px){
+            .postulado{
+                display: grid;
+                grid-template-areas: 
+                    "postulado__titulo"
+                    "postulado__paso1"
+                    "postulado__paso2"
+                    "postulado__paso3"
+                    "postulado__boton";
+                grid-template-rows: auto repeat(3, 1fr);
+                grid-template-columns: 60%;
+                column-gap: 10px;
+                row-gap: 5px;
+                justify-content: center;
+
+                .postulado__titulo{
+                    grid-area: postulado__titulo;
+                    color: $Naranja;
+                    justify-self: center;
+                    padding: 2px;
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+
+
+    
+                .postulado__paso1{
+                    @include card;
+                    grid-area: postulado__paso1;
+                }
+                .postulado__paso2{
+                    grid-area: postulado__paso2;
+                    @include card;
+                }
+                .postulado__paso3{
+                    grid-area: postulado__paso3;
+                    @include card;
+                }
+
+
+
+            }
+        }
+
+        
+        
     }
+
+
+
+    
