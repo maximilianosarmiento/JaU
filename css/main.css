@@ -794,5 +794,94 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background-color: #9a1ca5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+footer .footer__opciones {
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__opciones .footer__opcionesLista {
+  list-style-type: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer__opciones .footer__opcionesLista .footer__opcionesLink {
+  text-decoration: none;
+  color: white;
+}
+
+footer .footer__opciones .footer__opcionesLista .footer__opcionesLink:hover {
+  color: #eb9422;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+footer .footer__redes {
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer__redes .footer__redesLista {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 30px;
+}
+
+footer .footer__redes .footer__redesLista .footer__redesIcono {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
+  color: #eb9422;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+@media (max-width: 720px) and (min-width: 320px) {
+  .footer__opciones {
+    width: 50%;
+  }
+  .footer__opciones .footer__opcionesLink {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

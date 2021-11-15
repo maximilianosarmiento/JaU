@@ -1,5 +1,69 @@
 footer{
+
     display: flex;
     flex-direction: row;
+    background-color: $Morado;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+
+    .footer__opciones{
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .footer__opcionesLista{
+            list-style-type: none;
+            flex-direction: column;
+            .footer__opcionesLink{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: $Naranja;
+                    transition: 0.2s;
+                }
+
+            }
+        }
+
+    }
+    .footer__redes{
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .footer__redesLista{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-right: 30px;
+            
+            .footer__redesIcono{
+                text-decoration: none;
+                color: white;
+                padding: 5px;
+                &:hover{
+                    color: $Naranja;
+                    transition: 0.2s;
+                    transform: scale(1.1,1.1);
+                }
+
+            }
+        }
+
+    }
+
+
+
+
+}
+@media (max-width: 720px) and (min-width: 320px){
+    .footer__opciones{
+        width: 50%;
+        .footer__opcionesLink{
+            font-size: 12px;
+        }
+    }
 
 }
