@@ -8,7 +8,8 @@
         "../scss/_animaciones.scss",
         "../scss/_header.scss",
         "../scss/_index.scss",
-        "../scss/_footer.scss"
+        "../scss/_footer.scss",
+        "../scss/_categorias.scss"
     ],
     "names": [],
     "file": "main.css"
