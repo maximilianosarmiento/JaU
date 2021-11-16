@@ -8,43 +8,126 @@
     <title>Jau | Categorías</title>
 </head>
 <body>
-    <header class="header">
-        <nav class=" header__nav navbar fixed-top navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="header__logo navbar-brand" href="index.html"><img class="header__logoImagen" src="./Multimedia/Logo.png" alt="Logo" width="150rem"></a>
-            <h1 class="header__slogan">Soluciones cotidianas</h1>
-            <button class="header__hamburguesa navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true"></i></span>
-            </button>
-            <div class="header__opciones collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="header__lista navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="header__link nav-link" aria-current="page" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="header__link nav-link" href="contacto.html">Contactános</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="header__link nav-link dropdown-toggle" href="categorias.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Categorías
-                  </a>
-                  <ul class="header__listaOculta dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="header__listaOculta__item dropdown-item" href="#">Cocina</a></li>
-                    <li><a class="header__listaOculta__item dropdown-item" href="#">Matenimiento</a></li>
-                    <li><a class="header__listaOculta__item dropdown-item" href="#">Organización</a></li>
-                    <li><a class="header__listaOculta__item dropdown-item" href="#">Tintorería</a></li>
-                  </ul>
-                </li>
+
+
+ <!--Seccion Header con navbar-->
+  <header class="header">
+    <nav class=" header__nav navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="header__logo navbar-brand" href="index.html"><img class="header__logoImagen" src="./Multimedia/Logo.png" alt="Logo" width="150rem"></a>
+        <h1 class="header__slogan">Soluciones cotidianas</h1>
+        <button class="header__hamburguesa navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
+        <div class="header__opciones collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="header__lista navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="header__link nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="header__link nav-link" href="contacto.html">Contactános</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="header__link nav-link dropdown-toggle" href="categorias.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categorías
+              </a>
+              <ul class="header__listaOculta dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="header__listaOculta__item dropdown-item" href="categorias.html">Ir a sección Categorías</a></li>
+                <hr>
+                <li><a class="header__listaOculta__item dropdown-item" href="#">Cocina</a></li>
+                <li><a class="header__listaOculta__item dropdown-item" href="#">Matenimiento</a></li>
+                <li><a class="header__listaOculta__item dropdown-item" href="#">Organización</a></li>
+                <li><a class="header__listaOculta__item dropdown-item" href="#">Tintorería</a></li>
               </ul>
-              <form class="header__busqueda d-flex">
-                <input class="form-control me-2" type="search" placeholder="Encontrá tu solución" aria-label="Search" required>
-                <button class="header__boton btn btn-outline-success" type="submit">Buscar</button>
-              </form>
-            </div>
+            </li>
+          </ul>
+          <form class="header__busqueda d-flex">
+            <input class="form-control me-2" type="search" placeholder="Encontrá tu solución" aria-label="Search" required>
+            <button class="header__boton btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <img class="header__imagen" src="./Multimedia/imagenHeader.png" alt="Curva de header">
+  </header>
+
+
+ <!--Sección Main con cards-->
+  <main>
+    <div class="container-fluid">
+
+      <div class="row mainCategorias">
+        <div class="card mainCategorias__card col-md-2" style="width: 18rem;">
+          <img src="./Multimedia/abuelacocinando.png" class="card-img-top card__img" alt="abuela cocinando">
+          <div class="card-body">
+            <h5 class="card-title card__titulo">Cocina</h5>
+            <p class="card-text">Encontrá aqui los mejores tips y consejos de cocina, o encontrá el sabor casero que necesitás!</p>
+            <a href="#" class="btn card__boton btn-primary">Cocina</a>
           </div>
-        </nav>
-        <img class="header__imagen" src="./Multimedia/imagenHeader.png" alt="Curva de header">
-      </header>
-    
+        </div>
+
+        <div class="card mainCategorias__card col-md-2" style="width: 18rem;">
+          <img src="./Multimedia/chicocambiandofoco.png" class="card-img-top card__img" alt="chicocambiandofoco">
+          <div class="card-body">
+            <h5 class="card-title card__titulo">Mantenimiento</h5>
+            <p class="card-text">Todo lo que necesitás saber para mantener tu nuevo hogar, está en esta sección.</p>
+            <a href="#" class="btn card__boton btn-primary">Mantenimiento</a>
+          </div>
+        </div>
+
+        <div class="card mainCategorias__card col-md-2" style="width: 18rem;">
+          <img src="./Multimedia/madreehijaconpc.png" class="card-img-top card__img" alt="madreehijaconpc">
+          <div class="card-body">
+            <h5 class="card-title card__titulo">Organización</h5>
+            <p class="card-text">Organizarte, pagar cuentas, llegar a tiempo, puede ser un poco abrumador al principio. Te recomendamos esta sección!</p>
+            <a href="#" class="btn card__boton btn-primary">Organización</a>
+          </div>
+        </div>
+
+        <div class="card mainCategorias__card col-md-2" style="width: 18rem;">
+          <img src="./Multimedia/padreehijoplanchando.png" class="card-img-top card__img" alt="padreehijoplanchando">
+          <div class="card-body">
+            <h5 class="card-title card__titulo">Tintorería</h5>
+            <p class="card-text">Desde una mancha dificil, hasta como planchar correctamente una prenda, todas estas dudas solucionalas aqui.</p>
+            <a href="#" class="btn card__boton btn-primary">Tintorería</a>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </main>
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="footer__opciones">
+      <ul class="footer__opcionesLista">
+        <li>
+          <a class="footer__opcionesLink" href="contacto.html">Contactános</a>
+        </li>
+        <li>
+          <a class="footer__opcionesLink" href="postulado.html">Formá parte de JaU</a>
+        </li>
+        <li>
+          <a class="footer__opcionesLink" href="index.html">Volver al Inicio</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__redes">
+      <ul class="footer__redesLista">
+        <li class="footer__redesLista__item">
+          <a href="https://www.instagram.com/JauLatam" target="_blank"><i class="fab fa-instagram fa-2x footer__redesIcono"></i></a>
+        </li>
+        <li class="footer__redesLista__item">
+          <a href="https://www.facebook.com/JauLatam" target="_blank"><i class="fab fa-facebook-square fa-2x footer__redesIcono"></i></a>
+        </li>
+        <li class="footer__redesLista__item">
+          <a href="https://www.twitter.com/JauLatam" target="_blank"><i class="fab fa-twitter fa-2x footer__redesIcono"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/ab94807e6b.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
 </body>
 </html>

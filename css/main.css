@@ -884,4 +884,51 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
     font-size: 12px;
   }
 }
+
+.mainCategorias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mainCategorias .mainCategorias__card {
+  border: 2px solid #eb9422 !important;
+  margin-top: 70px;
+}
+
+.mainCategorias .mainCategorias__card:hover {
+  -webkit-box-shadow: 0px 0px 15px 1px #eb9422 !important;
+          box-shadow: 0px 0px 15px 1px #eb9422 !important;
+}
+
+.mainCategorias .mainCategorias__card:hover .card__img {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.mainCategorias .mainCategorias__card .card__titulo {
+  color: #9a1ca5;
+}
+
+.mainCategorias .mainCategorias__card .card__boton {
+  border: 1px solid #9a1ca5;
+  background-color: white;
+  color: #9a1ca5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.mainCategorias .mainCategorias__card .card__boton:hover {
+  background-color: #eb9422;
+  color: white;
+  border-color: #eb9422;
+}
 /*# sourceMappingURL=main.css.map */
