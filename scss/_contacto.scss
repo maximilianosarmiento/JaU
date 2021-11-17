@@ -22,12 +22,24 @@
         }
         .mainFormulario__texto{
             @include formulario;
+
+            .mainFormulario__botones{
+                display: flex;
+                flex-direction: row;
+                margin: 5px;
+
+                .mainFormulario__boton{
+                    @include boton;
+
+                }
+            }
         }
     }
 }
 @media (max-width: 720px) and (min-width: 320px){
     .mainContainer{
         margin-top: 45px;
+        height: auto;
     
         .mainFormulario__titulo{
             font-size: 1.1rem;

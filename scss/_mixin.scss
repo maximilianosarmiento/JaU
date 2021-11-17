@@ -47,16 +47,29 @@
 }
 
 @mixin formulario {
-    border: 2px solid $Naranja;
+    border: 2px solid $Morado;
+    background-color: rgba(137, 43, 226, 0.363);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    color: $Morado;
+    color: white;
     align-items: center;
-    padding:10px;
+    margin:10px;
     font-weight: bold;
     &:hover{
-        box-shadow:0px 0px 15px 1px $Naranja;
+        background-color: $Morado;
+        transition: 0.2s;
+    }
+}
+
+@mixin boton{
+    margin:5px;
+    color: white;
+    border-color: white;
+    &:hover{
+        background-color: $Naranja;
+        border-color: $Naranja;
+        transition: 0.2s;
     }
 }

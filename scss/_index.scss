@@ -93,6 +93,11 @@
                 "postulado__boton postulado__boton postulado__boton";
             grid-template-rows: 1fr auto auto;
             grid-template-columns: repeat(3, 30%);
+            background-image:url(../Multimedia/fondo1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
             column-gap: 10px;
             row-gap: 5px;
             justify-content: center;

@@ -109,13 +109,14 @@ header .header__nav .header__opciones .header__lista .header__listaOculta .heade
 }
 
 header .header__nav .header__opciones .header__boton {
-  border-color: white !important;
-  color: white !important;
+  margin: 5px;
+  color: white;
+  border-color: white;
 }
 
 header .header__nav .header__opciones .header__boton:hover {
-  background-color: #eb9422 !important;
-  color: white !important;
+  background-color: #eb9422;
+  border-color: #eb9422;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -286,6 +287,11 @@ main .postulado {
       grid-template-rows: 1fr auto auto;
   -ms-grid-columns: (30%)[3];
       grid-template-columns: repeat(3, 30%);
+  background-image: url(../Multimedia/fondo1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   -webkit-column-gap: 10px;
           column-gap: 10px;
   row-gap: 5px;
@@ -892,6 +898,7 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 10px;
 }
 
 .mainCategorias .mainCategorias__card {
@@ -957,7 +964,8 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
 }
 
 .mainContainer .mainFormulario__contenedor .mainFormulario__datos {
-  border: 2px solid #eb9422;
+  border: 2px solid #9a1ca5;
+  background-color: rgba(137, 43, 226, 0.363);
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -968,21 +976,23 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: #9a1ca5;
+  color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  margin: 10px;
   font-weight: bold;
 }
 
 .mainContainer .mainFormulario__contenedor .mainFormulario__datos:hover {
-  -webkit-box-shadow: 0px 0px 15px 1px #eb9422;
-          box-shadow: 0px 0px 15px 1px #eb9422;
+  background-color: #9a1ca5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .mainContainer .mainFormulario__contenedor .mainFormulario__texto {
-  border: 2px solid #eb9422;
+  border: 2px solid #9a1ca5;
+  background-color: rgba(137, 43, 226, 0.363);
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -993,22 +1003,48 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: #9a1ca5;
+  color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  margin: 10px;
   font-weight: bold;
 }
 
 .mainContainer .mainFormulario__contenedor .mainFormulario__texto:hover {
-  -webkit-box-shadow: 0px 0px 15px 1px #eb9422;
-          box-shadow: 0px 0px 15px 1px #eb9422;
+  background-color: #9a1ca5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 5px;
+}
+
+.mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones .mainFormulario__boton {
+  margin: 5px;
+  color: white;
+  border-color: white;
+}
+
+.mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones .mainFormulario__boton:hover {
+  background-color: #eb9422;
+  border-color: #eb9422;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 @media (max-width: 720px) and (min-width: 320px) {
   .mainContainer {
     margin-top: 45px;
+    height: auto;
   }
   .mainContainer .mainFormulario__titulo {
     font-size: 1.1rem;
@@ -1022,6 +1058,150 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
   }
   .mainContainer .mainFormulario__titulo {
     font-size: 1.5rem;
+  }
+}
+
+.mainPostulado {
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainPostulado .mainPostulado__titulo {
+  color: #9a1ca5;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.mainPostulado .mainPostulado__contenedorDatos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainPostulado .mainPostulado__contenedorDatos .mainPostulado__datos {
+  border: 2px solid #9a1ca5;
+  background-color: rgba(137, 43, 226, 0.363);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.mainPostulado .mainPostulado__contenedorDatos .mainPostulado__datos:hover {
+  background-color: #9a1ca5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.mainPostulado .mainPostulado__contenedorDatos .mainPostulado__categorias {
+  border: 2px solid #9a1ca5;
+  background-color: rgba(137, 43, 226, 0.363);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  font-weight: bold;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px;
+}
+
+.mainPostulado .mainPostulado__contenedorDatos .mainPostulado__categorias:hover {
+  background-color: #9a1ca5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.mainPostulado .mainPostulado__texto {
+  border: 2px solid #9a1ca5;
+  background-color: rgba(137, 43, 226, 0.363);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.mainPostulado .mainPostulado__texto:hover {
+  background-color: #9a1ca5;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.mainPostulado .mainPostulado__texto .mainPostulado__botones {
+  margin: 5px;
+}
+
+.mainPostulado .mainPostulado__texto .mainPostulado__botones .mainPostulado__boton {
+  margin: 5px;
+  color: white;
+  border-color: white;
+}
+
+.mainPostulado .mainPostulado__texto .mainPostulado__botones .mainPostulado__boton:hover {
+  background-color: #eb9422;
+  border-color: #eb9422;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .mainPostulado {
+    margin-top: 50px;
+  }
+  .mainPostulado .mainPostulado__titulo {
+    padding: 5px;
+    font-size: 1.3rem;
+  }
+  .mainPostulado .mainPostulado__contenedorDatos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */

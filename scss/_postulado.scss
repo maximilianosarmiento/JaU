@@ -1,0 +1,53 @@
+.mainPostulado{
+    height: 100vh;
+    justify-content: center;
+    .mainPostulado__titulo{
+        color: $Morado;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .mainPostulado__contenedorDatos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        .mainPostulado__datos{
+            @include formulario;
+        }
+        .mainPostulado__categorias{
+            @include formulario;
+            align-items: flex-start;
+            padding: 10px;
+        }
+
+    }
+    .mainPostulado__texto{
+        @include formulario;
+
+        .mainPostulado__botones{
+            margin:5px;
+            .mainPostulado__boton{
+                @include boton;
+            }
+        }
+    }
+}
+@media (max-width: 480px) and (min-width: 320px){
+
+    .mainPostulado{
+        margin-top: 50px;
+        .mainPostulado__titulo{
+            padding: 5px;
+            font-size: 1.3rem;
+        }
+
+        .mainPostulado__contenedorDatos{
+            flex-direction: column;
+    
+        }
+
+
+    }
+
+}

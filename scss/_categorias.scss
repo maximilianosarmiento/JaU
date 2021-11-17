@@ -1,6 +1,7 @@
 .mainCategorias{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 10px;
 
     .mainCategorias__card{
         border: 2px solid $Naranja ;

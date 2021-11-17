@@ -40,13 +40,7 @@
                 }
 
                 .header__boton{
-                    border-color: white !important;
-                    color: white !important;
-                    &:hover{
-                        background-color: $Naranja !important;
-                        color: white !important;
-                        transition: 0.2s;
-                    }
+                    @include boton;
                 }
 
             }
