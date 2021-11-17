@@ -940,8 +940,7 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
   border-color: #eb9422;
 }
 
-.mainContainer {
-  margin-top: 99px;
+body .mainContainer {
   height: 100vh;
   background-image: url(../Multimedia/fondo1.png);
   background-position: center;
@@ -950,20 +949,20 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
   background-attachment: fixed;
 }
 
-.mainContainer .mainFormulario__titulo {
+body .mainContainer .mainFormulario__titulo {
   color: #9a1ca5;
   font-size: 2rem;
   text-align: center;
   padding: 20px;
 }
 
-.mainContainer .mainFormulario__contenedor {
+body .mainContainer .mainFormulario__contenedor {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.mainContainer .mainFormulario__contenedor .mainFormulario__datos {
+body .mainContainer .mainFormulario__contenedor .mainFormulario__datos {
   border: 2px solid #9a1ca5;
   background-color: rgba(137, 43, 226, 0.363);
   border-radius: 10px;
@@ -984,13 +983,13 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
   font-weight: bold;
 }
 
-.mainContainer .mainFormulario__contenedor .mainFormulario__datos:hover {
+body .mainContainer .mainFormulario__contenedor .mainFormulario__datos:hover {
   background-color: #9a1ca5;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.mainContainer .mainFormulario__contenedor .mainFormulario__texto {
+body .mainContainer .mainFormulario__contenedor .mainFormulario__texto {
   border: 2px solid #9a1ca5;
   background-color: rgba(137, 43, 226, 0.363);
   border-radius: 10px;
@@ -1011,13 +1010,13 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
   font-weight: bold;
 }
 
-.mainContainer .mainFormulario__contenedor .mainFormulario__texto:hover {
+body .mainContainer .mainFormulario__contenedor .mainFormulario__texto:hover {
   background-color: #9a1ca5;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones {
+body .mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1028,13 +1027,13 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
   margin: 5px;
 }
 
-.mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones .mainFormulario__boton {
+body .mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones .mainFormulario__boton {
   margin: 5px;
   color: white;
   border-color: white;
 }
 
-.mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones .mainFormulario__boton:hover {
+body .mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones .mainFormulario__boton:hover {
   background-color: #eb9422;
   border-color: #eb9422;
   -webkit-transition: 0.2s;

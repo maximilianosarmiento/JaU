@@ -1,59 +1,60 @@
-.mainContainer{
-    margin-top: 99px;
-    height: 100vh;
-    background-image:url(../Multimedia/fondo1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+body{
 
-    .mainFormulario__titulo{
-        color: $Morado;
-        font-size: 2rem;
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .mainFormulario__contenedor{
-        justify-content: center;
+    .mainContainer{
+        height:100vh;
+        background-image:url(../Multimedia/fondo1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
 
-        .mainFormulario__datos{
-            @include formulario;
+        .mainFormulario__titulo{
+            color: $Morado;
+            font-size: 2rem;
+            text-align: center;
+            padding: 20px;
         }
-        .mainFormulario__texto{
-            @include formulario;
+        
+        .mainFormulario__contenedor{
+            justify-content: center;
 
-            .mainFormulario__botones{
-                display: flex;
-                flex-direction: row;
-                margin: 5px;
+            .mainFormulario__datos{
+                @include formulario;
+            }
+            .mainFormulario__texto{
+                @include formulario;
 
-                .mainFormulario__boton{
-                    @include boton;
+                .mainFormulario__botones{
+                    display: flex;
+                    flex-direction: row;
+                    margin: 5px;
 
+                    .mainFormulario__boton{
+                        @include boton;
+
+                    }
                 }
             }
         }
     }
 }
-@media (max-width: 720px) and (min-width: 320px){
-    .mainContainer{
-        margin-top: 45px;
+    @media (max-width: 720px) and (min-width: 320px){
+        .mainContainer{
+            margin-top: 45px;
+            
+            .mainFormulario__titulo{
+                font-size: 1.1rem;
+                padding: 10px;
+            }
+        }
+    }
+    @media (max-width: 1150px) and (min-width: 720px){
+        .mainContainer{
+            margin-top: 60px;
         
-    
-        .mainFormulario__titulo{
-            font-size: 1.1rem;
-            padding: 10px;
+            .mainFormulario__titulo{
+                font-size: 1.5rem;
+            }
         }
-    }
-}
-@media (max-width: 1150px) and (min-width: 720px){
-    .mainContainer{
-        margin-top: 60px;
-    
-        .mainFormulario__titulo{
-            font-size: 1.5rem;
-        }
-    }
 
-}
+    }
