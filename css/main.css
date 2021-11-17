@@ -530,31 +530,31 @@ main .postulado .postulado__paso3:hover {
 }
 
 main .postulado .postulado__boton {
-  border-color: #9a1ca5 !important;
+  border-color: #9a1ca5;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: postulado__boton;
-  width: -webkit-fit-content !important;
-  width: -moz-fit-content !important;
-  width: fit-content !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
 main .postulado .postulado__boton a {
-  text-decoration: none !important;
-  color: #9a1ca5 !important;
+  text-decoration: none;
+  color: #9a1ca5;
 }
 
 main .postulado .postulado__boton:hover {
   background-color: #eb9422;
-  color: white !important;
-  border-color: white !important;
+  color: white;
+  border-color: white;
 }
 
 main .postulado .postulado__boton:hover a {
-  color: white !important;
+  color: white;
 }
 
 @media (max-width: 720px) and (min-width: 320px) {

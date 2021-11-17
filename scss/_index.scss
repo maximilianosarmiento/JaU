@@ -124,21 +124,21 @@
                 @include card;
             }
             .postulado__boton{
-                border-color: $Morado !important;
+                border-color: $Morado;
                 grid-area: postulado__boton;
-                width: fit-content !important;
+                width: fit-content;
                 justify-self: center;
     
                 a{
-                    text-decoration: none !important;
-                    color: $Morado !important;
+                    text-decoration: none;
+                    color: $Morado;
                 }
                 &:hover{
                     background-color: $Naranja;
-                    color: white !important;
-                    border-color: white !important;
+                    color: white;
+                    border-color: white;
                     a{
-                        color: white !important;
+                        color: white;
                     }
     
                 }
