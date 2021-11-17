@@ -292,6 +292,7 @@ main .postulado {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 10px;
 }
 
 main .postulado .postulado__titulo {
@@ -799,7 +800,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 footer .footer__opciones {
@@ -932,7 +933,95 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
   border-color: #eb9422;
 }
 
-.mainFormulario {
-  margin-top: 100px;
+.mainContainer {
+  margin-top: 99px;
+  height: 100vh;
+  background-image: url(../Multimedia/fondo1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.mainContainer .mainFormulario__titulo {
+  color: #9a1ca5;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.mainContainer .mainFormulario__contenedor {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainContainer .mainFormulario__contenedor .mainFormulario__datos {
+  border: 2px solid #eb9422;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #9a1ca5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.mainContainer .mainFormulario__contenedor .mainFormulario__datos:hover {
+  -webkit-box-shadow: 0px 0px 15px 1px #eb9422;
+          box-shadow: 0px 0px 15px 1px #eb9422;
+}
+
+.mainContainer .mainFormulario__contenedor .mainFormulario__texto {
+  border: 2px solid #eb9422;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #9a1ca5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.mainContainer .mainFormulario__contenedor .mainFormulario__texto:hover {
+  -webkit-box-shadow: 0px 0px 15px 1px #eb9422;
+          box-shadow: 0px 0px 15px 1px #eb9422;
+}
+
+@media (max-width: 720px) and (min-width: 320px) {
+  .mainContainer {
+    margin-top: 45px;
+  }
+  .mainContainer .mainFormulario__titulo {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1150px) and (min-width: 720px) {
+  .mainContainer {
+    margin-top: 60px;
+  }
+  .mainContainer .mainFormulario__titulo {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
