@@ -1044,7 +1044,6 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
 @media (max-width: 720px) and (min-width: 320px) {
   .mainContainer {
     margin-top: 45px;
-    height: auto;
   }
   .mainContainer .mainFormulario__titulo {
     font-size: 1.1rem;
