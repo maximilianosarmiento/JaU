@@ -210,6 +210,7 @@ main .main__que .main__queLogo {
       -ms-grid-row-align: center;
       align-self: center;
   padding-top: 10%;
+  padding-bottom: 10px;
   -webkit-animation-name: efectoLogo;
           animation-name: efectoLogo;
   -webkit-animation-iteration-count: infinite;
@@ -892,7 +893,11 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
   }
 }
 
-.mainCategorias {
+.contenedorCategorias {
+  height: 100%;
+}
+
+.contenedorCategorias .mainCategorias {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -901,28 +906,28 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
   margin-bottom: 10px;
 }
 
-.mainCategorias .mainCategorias__card {
+.contenedorCategorias .mainCategorias .mainCategorias__card {
   border: 2px solid #eb9422;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
-.mainCategorias .mainCategorias__card:hover {
+.contenedorCategorias .mainCategorias .mainCategorias__card:hover {
   -webkit-box-shadow: 0px 0px 15px 1px #eb9422;
           box-shadow: 0px 0px 15px 1px #eb9422;
 }
 
-.mainCategorias .mainCategorias__card:hover .card__img {
+.contenedorCategorias .mainCategorias .mainCategorias__card:hover .card__img {
   -webkit-transform: scale(1.1, 1);
           transform: scale(1.1, 1);
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-.mainCategorias .mainCategorias__card .card__titulo {
+.contenedorCategorias .mainCategorias .mainCategorias__card .card__titulo {
   color: #9a1ca5;
 }
 
-.mainCategorias .mainCategorias__card .card__boton {
+.contenedorCategorias .mainCategorias .mainCategorias__card .card__boton {
   border: 1px solid #9a1ca5;
   background-color: white;
   color: #9a1ca5;
@@ -934,14 +939,15 @@ footer .footer__redes .footer__redesLista .footer__redesIcono:hover {
       align-self: flex-end;
 }
 
-.mainCategorias .mainCategorias__card .card__boton:hover {
+.contenedorCategorias .mainCategorias .mainCategorias__card .card__boton:hover {
   background-color: #eb9422;
   color: white;
   border-color: #eb9422;
 }
 
-body .mainContainer {
+.mainContainer {
   height: 100vh;
+  margin-top: 64px;
   background-image: url(../Multimedia/fondo1.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -949,20 +955,20 @@ body .mainContainer {
   background-attachment: fixed;
 }
 
-body .mainContainer .mainFormulario__titulo {
+.mainContainer .mainFormulario__titulo {
   color: #9a1ca5;
   font-size: 2rem;
   text-align: center;
   padding: 20px;
 }
 
-body .mainContainer .mainFormulario__contenedor {
+.mainContainer .mainFormulario__contenedor {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-body .mainContainer .mainFormulario__contenedor .mainFormulario__datos {
+.mainContainer .mainFormulario__contenedor .mainFormulario__datos {
   border: 2px solid #9a1ca5;
   background-color: rgba(137, 43, 226, 0.363);
   border-radius: 10px;
@@ -983,13 +989,13 @@ body .mainContainer .mainFormulario__contenedor .mainFormulario__datos {
   font-weight: bold;
 }
 
-body .mainContainer .mainFormulario__contenedor .mainFormulario__datos:hover {
+.mainContainer .mainFormulario__contenedor .mainFormulario__datos:hover {
   background-color: #9a1ca5;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-body .mainContainer .mainFormulario__contenedor .mainFormulario__texto {
+.mainContainer .mainFormulario__contenedor .mainFormulario__texto {
   border: 2px solid #9a1ca5;
   background-color: rgba(137, 43, 226, 0.363);
   border-radius: 10px;
@@ -1010,13 +1016,13 @@ body .mainContainer .mainFormulario__contenedor .mainFormulario__texto {
   font-weight: bold;
 }
 
-body .mainContainer .mainFormulario__contenedor .mainFormulario__texto:hover {
+.mainContainer .mainFormulario__contenedor .mainFormulario__texto:hover {
   background-color: #9a1ca5;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-body .mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones {
+.mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1027,13 +1033,13 @@ body .mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainForm
   margin: 5px;
 }
 
-body .mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones .mainFormulario__boton {
+.mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones .mainFormulario__boton {
   margin: 5px;
   color: white;
   border-color: white;
 }
 
-body .mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones .mainFormulario__boton:hover {
+.mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainFormulario__botones .mainFormulario__boton:hover {
   background-color: #eb9422;
   border-color: #eb9422;
   -webkit-transition: 0.2s;
@@ -1042,7 +1048,7 @@ body .mainContainer .mainFormulario__contenedor .mainFormulario__texto .mainForm
 
 @media (max-width: 720px) and (min-width: 320px) {
   .mainContainer {
-    margin-top: 45px;
+    margin-top: 50px;
   }
   .mainContainer .mainFormulario__titulo {
     font-size: 1.1rem;
