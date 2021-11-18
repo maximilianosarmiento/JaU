@@ -10,7 +10,7 @@
         
             .header__slogan{
                 padding-left: 20px;
-                color: white !important;
+                color: white ;
             }
 
             .header__opciones{
@@ -18,10 +18,10 @@
                 .header__lista{
                     margin: 0% !important;
                     .header__link{
-                        color: white !important;
+                        color: white ;
                         &:hover{
-                            background-color: white !important;
-                            color: $Naranja !important;
+                            background-color: white ;
+                            color: $Naranja ;
                             border-radius: 5px;
                             transition: .2s;
                         }
@@ -30,8 +30,8 @@
                         .header__listaOculta__item{
                             color: $Morado;
                             &:hover{
-                                background-color: $Morado !important;
-                                color: white !important;
+                                background-color: $Morado;
+                                color: white ;
                                 border-radius: 5px;
                                 transition: 0.2s;
                             }
@@ -45,7 +45,7 @@
 
             }
             .header__hamburguesa{
-                background-color: $Naranja !important;
+                background-color: $Naranja;
                 color: white;
                 border-color: white;
             }

@@ -71,7 +71,7 @@ header .header__nav {
 
 header .header__nav .header__slogan {
   padding-left: 20px;
-  color: white !important;
+  color: white;
 }
 
 header .header__nav .header__opciones {
@@ -85,12 +85,12 @@ header .header__nav .header__opciones .header__lista {
 }
 
 header .header__nav .header__opciones .header__lista .header__link {
-  color: white !important;
+  color: white;
 }
 
 header .header__nav .header__opciones .header__lista .header__link:hover {
-  background-color: white !important;
-  color: #eb9422 !important;
+  background-color: white;
+  color: #eb9422;
   border-radius: 5px;
   -webkit-transition: .2s;
   transition: .2s;
@@ -101,8 +101,8 @@ header .header__nav .header__opciones .header__lista .header__listaOculta .heade
 }
 
 header .header__nav .header__opciones .header__lista .header__listaOculta .header__listaOculta__item:hover {
-  background-color: #9a1ca5 !important;
-  color: white !important;
+  background-color: #9a1ca5;
+  color: white;
   border-radius: 5px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -122,7 +122,7 @@ header .header__nav .header__opciones .header__boton:hover {
 }
 
 header .header__nav .header__hamburguesa {
-  background-color: #eb9422 !important;
+  background-color: #eb9422;
   color: white;
   border-color: white;
 }
@@ -530,7 +530,7 @@ main .postulado .postulado__paso3:hover {
 }
 
 main .postulado .postulado__boton {
-  border-color: #9a1ca5;
+  border-color: white;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -544,13 +544,13 @@ main .postulado .postulado__boton {
 
 main .postulado .postulado__boton a {
   text-decoration: none;
-  color: #9a1ca5;
+  color: white;
 }
 
 main .postulado .postulado__boton:hover {
   background-color: #eb9422;
   color: white;
-  border-color: white;
+  border-color: #9a1ca5;
 }
 
 main .postulado .postulado__boton:hover a {
